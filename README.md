@@ -100,16 +100,11 @@ The installation can be completed by following these instructions:
 To execute the script, open a Git terminal on the main project folder (cloned folder) Run the following command: npm start
 
 ### Screenshot
-![Alt text]()
+![Alt text](<Assets/tecn blog.png>)
 
-### Video
-A link to the [Walkthrough Video](): 
-
-A link to the Video Part 1. demonstrates on how to run the schema, seed the database, as well as start the server:
- 
-
-A link to the Video Part 2. The video demonstrates the POST, PUT, DELETE, and GET routes using the application, Insomnia.
-
+### Deployment
+Link to Heroku
+https://deploy-tech-blog-to-hereku-9c695d955945.herokuapp.com/
     
 
 ## Contributing
