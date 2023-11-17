@@ -1,5 +1,3 @@
- /* Global */
-
 :root {
   --primary: #242424;
   --secondary: #e0e0e0;
@@ -28,21 +26,21 @@
 .logo {
   margin-top: 10px; 
 }
-.app-title-container {
+.title-container {
 flex-direction: row;
 column-gap: 12px;
 display: flex;
 text-align: center;
 }
 
-.app-title {
+.title {
 font-size: 28px;
 letter-spacing: -1px;
 color: var(--blue);
 padding-top: 16px;
 }
 
-.app-title-link {
+.title-link {
 text-decoration: none;
 }
 
@@ -72,10 +70,10 @@ background-color: var(--white);
     margin: 10px;
   }
   
-  .header-page {
-      color: black;
-      padding-bottom: 20px;
-  }
+.header-page {
+    color: black;
+    padding-bottom: 20px;
+}
 
 h1,
 h2,
@@ -91,7 +89,6 @@ h6 {
 p {
     font-size: 16px;
   }
-
 
 .text-uppercase {
     text-transform: uppercase;
@@ -114,7 +111,6 @@ main {
   top: 0px;
 }
 
-
 /* Buttons */
 
 .btn {
@@ -135,11 +131,10 @@ main {
 }
 
 .btn:hover {
-    transform: scale(1.01);
-    z-index: 0.2;
-    cursor: pointer;
-    background-color: var(--blue);
-    color: rgb(0, 0, 0);
+  color: var(--primary);
+  background-color: var(--tertiary);
+  transform: translate(0, 0);
+  box-shadow: 2px 2px var(--dark);
 }
 
 .btn-inline {
@@ -147,7 +142,7 @@ main {
 }
 
 .btn-outline{
-    font-size: 16px;
+    /* font-size: 16px;
     font-weight: 700;
     line-height: 40px;
     text-decoration: none;
@@ -160,15 +155,32 @@ main {
     background-color: #010ce600;
     outline: none;
     height: fit-content;
-    transition: transform .2s;
+    transition: transform .2s; */
+    border-radius: var(--border-radius);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: var(--light-dark);
+    box-shadow: 3px 3px var(--secondary);
+    transform: translate(-1px, -1px);
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
   }
 
   .btn-outline:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1);
     z-index: 1;
     cursor: pointer;
-    color: var(--blue);
-}
+    color: var(--blue); */
+    color: var(--primary);
+    background-color: var(--tertiary);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+} 
 
 /* Header */
 
@@ -332,4 +344,4 @@ flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
     }
-    }
+ }

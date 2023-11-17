@@ -38,8 +38,6 @@ router.get('/', (req, res) => {
       });
 });
 
-
-
 // redirecting users to homepage once they log in
 router.get('/login', (req, res) => {
     if(req.session.loggedIn) {
@@ -134,7 +132,6 @@ router.get('/posts-comments', (req, res) => {
             res.status(404).json({ message: 'No post found with this id' });
             return;
           }
-    
           // serialize the data
           const post = dbPostData.get({ plain: true });
     
